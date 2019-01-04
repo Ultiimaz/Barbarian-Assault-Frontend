@@ -1,14 +1,11 @@
 import React from 'react';
-let AuthKey = true;
+
 let getUser = () => {
     // check if AuthKey is correct and if its still legit, if its incorrect return error and return the login button
 
         return {user: "sven"};
 };
-let ShowLoginButtons = () => {
 
-return "test"
-};
 
 class Header extends React.Component {
 
@@ -20,11 +17,11 @@ class Header extends React.Component {
                     <div className="row">
                         <div className="col-sm">
                         </div>
-                        <div className="col-sm-5 text-white">
+                        <div className="col-sm-5 text-black-50">
                             <p className="font-weight-bold mt-1">Barbarian Assault</p>
                         </div>
                         <div className="col-sm-2">
-                            {AuthKey? getUser().user : ShowLoginButtons() // checks if user is logged in
+                            {this.props.AuthKey? getUser().user : "" // checks if user is logged in
                             }
                         </div>
                     </div>
