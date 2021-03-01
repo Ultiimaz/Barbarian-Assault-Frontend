@@ -15,7 +15,7 @@
     "react-scripts": "2.1.1",
     "react-swipeable-views": "^0.13.0",
     "reactstrap": "^6.5.0",
-    "three": "^0.100.0",
+    "three": "^0.125.0",
     "threejs-orbit-controls": "^1.0.3"
   },
   "scripts": {
